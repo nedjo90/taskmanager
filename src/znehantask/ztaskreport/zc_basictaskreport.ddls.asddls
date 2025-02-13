@@ -12,6 +12,7 @@ define view entity ZC_BASICTASKREPORT
 {
       @EndUserText.label: 'id'
   key Taskid,
+      @EndUserText.label: 'Title'
       Title,
       Description
 }
