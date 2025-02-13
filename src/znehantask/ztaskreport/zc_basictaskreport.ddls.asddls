@@ -7,9 +7,11 @@
     sizeCategory: #S,
     dataClass: #MIXED
 }
-define view entity ZC_BASICTASKREPORT as select from ZI_BASICTASKREPORT
+define view entity ZC_BASICTASKREPORT
+  as select from ZI_BASICTASKREPORT
 {
-    key Taskid,
-    Title,
-    Description
+      @EndUserText.label: 'id'
+  key Taskid,
+      Title,
+      Description
 }
